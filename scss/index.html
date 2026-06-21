@@ -8,39 +8,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lexend:wght@600;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="custom.css"></head>
 <body>
 
     <header class="sticky-top bg-primary shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-light container py-3">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html" style="position: relative; z-index: 1050;">
-<img src="/img/logo.jpeg" alt="Logo Oliv Taller de Joyas" style="height: 60px; width: auto;"></a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html" style="position: relative; z-index: 1050;">
+                <img src="/img/logo.jpeg" alt="Logo Oliv Taller de Joyas" style="height: 60px; width: auto;">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link active fw-bold text-dark border-bottom border-dark border-2 pb-1" href="index.html">Inicio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="catalogo.html">Catálogo</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="#">Sobre nosotros</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="#">Contacto</a>
+    </li>
+</ul>
                 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ms-auto gap-4">
-                        <li class="nav-item">
-                            <a class="nav-link active text-dark fw-bold" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="catalogo.html">Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="nosotros.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="d-flex align-items-center mt-2 mt-lg-0">
+                    <form class="position-relative me-3" role="search">
+                        <input class="form-control rounded-pill pe-5 bg-white border-0" type="search" placeholder="Buscar..." aria-label="Buscar" style="width: 200px;">
+                        <button class="btn btn-link position-absolute end-0 top-50 translate-middle-y text-secondary p-0 pe-3" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    
+                    <a href="#" class="text-dark fs-4 lh-1">
+                        <i class="bi bi-person"></i>
+                    </a>
                 </div>
-            </div>
-        </nav>
-    </header>
+
+            </div> </div> </nav>
+</header>
 
     <main class="container my-5">
 
@@ -51,7 +66,7 @@
                 <a href="catalogo.html" class="btn btn-primary btn-lg px-4 shadow">Ver Catálogo</a>
             </div>
             <div class="col-md-6">
-<img src="./img/foto inicio banner.jpeg" alt="Nueva Colección Oliv" class="img-fluid rounded shadow-sm">            </div>
+<img src="/img/foto inicio banner.jpeg" alt="Nueva Colección Oliv" class="img-fluid rounded shadow-sm">            </div>
         </section>
 
         <section class="mb-5">
@@ -59,20 +74,25 @@
             <div class="row g-4 text-center">
                 <div class="col-4 col-md-4">
                     <div class="p-3">
-                        <img src="img/cat-cristal.jpg" alt="Línea Cristal" class="img-fluid rounded-circle shadow-sm mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-                        <h5 class="fw-bold text-dark">Línea Cristal</h5>
+                        <img src="/img/Linea Cristal 1.jpg" alt="Línea Cristal" class="img-fluid rounded-top";>
+<h5 class="card-title fw-bold text-dark mb-1 mt-3">
+    <a href="catalogo.html" class="text-decoration-none text-dark">Línea Cristal</a>
+</h5>                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="p-3">
+                        <img src="/img/Linea Concepto.jpeg" alt="Línea Concepto" class="img-fluid rounded-top";>
+                        <h5 class="card-title fw-bold text-dark mb-1 mt-3">
+    <a href="catalogo.html" class="text-decoration-none text-dark">Línea Concepto</a>
+</h5>
                     </div>
                 </div>
                 <div class="col-4 col-md-4">
                     <div class="p-3">
-                        <img src="img/cat-concepto.jpg" alt="Línea Concepto" class="img-fluid rounded-circle shadow-sm mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-                        <h5 class="fw-bold text-dark">Línea Concepto</h5>
-                    </div>
-                </div>
-                <div class="col-4 col-md-4">
-                    <div class="p-3">
-                        <img src="img/cat-madera.jpg" alt="Línea Madera" class="img-fluid rounded-circle shadow-sm mb-3" style="width: 120px; height: 120px; object-fit: cover;">
-                        <h5 class="fw-bold text-dark">Línea Madera</h5>
+                        <img src="/img/Linea Madera.jpeg" alt="Línea Madera" class="img-fluid rounded-top";>
+                        <h5 class="card-title fw-bold text-dark mb-1 mt-3">
+    <a href="catalogo.html" class="text-decoration-none text-dark">Línea Madera</a>
+</h5>
                     </div>
                 </div>
             </div>
@@ -84,7 +104,7 @@
                 
                 <div class="col">
                     <div class="card h-100 border-0 shadow-sm rounded">
-                        <img src="img/producto1.jpg" class="card-img-top rounded-top" alt="Collar 1">
+        <img src="/img/Choker Conexion Natural.jpeg" class="card-img-top rounded-top" alt="Collar 1"> 
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <div>
                                 <h5 class="card-title fw-bold text-dark mb-1">Choker Conexión Natural</h5>
@@ -96,21 +116,22 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100 border-0 shadow-sm rounded">
-                        <img src="img/producto2.jpg" class="card-img-top rounded-top" alt="Collar 2">
-                        <div class="card-body text-center d-flex flex-column justify-content-between">
-                            <div>
-                                <h5 class="card-title fw-bold text-dark mb-1">Choker Ojo turco</h5>
-                                <p class="card-text text-dark fw-bold fs-5 mb-3">$15.000</p>
-                            </div>
-                            <button class="btn btn-outline-primary w-100 rounded-pill">Ver Detalle</button>
-                        </div>
-                    </div>
-                </div>
+    <div class="card h-100 border-0 shadow-sm rounded">
+        <img src="/img/Choker Ojo turco.jpeg" class="card-img-top rounded-top" alt="Collar 2"> 
+        
+        <div class="card-body text-center d-flex flex-column justify-content-between">
+            <div>
+                <h5 class="card-title fw-bold text-dark mb-1">Choker Ojo turco</h5>
+                <p class="card-text text-dark fw-bold fs-5 mb-3">$15.000</p>
+            </div>
+            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">Ver Detalle</a>
+        </div>
+    </div>
+</div>
 
                 <div class="col">
                     <div class="card h-100 border-0 shadow-sm rounded">
-                        <img src="img/producto3.jpg" class="card-img-top rounded-top" alt="Collar 3">
+        <img src="/img/Collar Esferas.jpeg" class="card-img-top rounded-top" alt="Collar 3"> 
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <div>
                                 <h5 class="card-title fw-bold text-dark mb-1">Collar Esferas</h5>
@@ -123,7 +144,7 @@
 
                 <div class="col">
                     <div class="card h-100 border-0 shadow-sm rounded">
-                        <img src="img/producto4.jpg" class="card-img-top rounded-top" alt="Collar 4">
+        <img src="/img/Collar Turquesas.jpg" class="card-img-top rounded-top" alt="Collar 4"> 
                         <div class="card-body text-center d-flex flex-column justify-content-between">
                             <div>
                                 <h5 class="card-title fw-bold text-dark mb-1">Collar Turquesas</h5>

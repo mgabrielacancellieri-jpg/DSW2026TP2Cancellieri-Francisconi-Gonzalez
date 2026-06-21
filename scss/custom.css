@@ -11989,4 +11989,14 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+  
+}
+/* tamaño para  las fotos de los productos destacados */
+.card .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
 }/*# sourceMappingURL=custom.css.map */
