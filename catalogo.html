@@ -1,159 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oliv Taller de Joyas</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lexend:wght@600;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lexend:wght@600;700&family=Reem+Kufi:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
     <header class="sticky-top bg-primary shadow-sm">
-    <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            
-            <a class="navbar-brand" href="index.html" style="position: relative; z-index: 1050;">
-                <img src="/img/logo.jpeg" alt="Logo Oliv Taller de Joyas" style="height: 60px; width: auto;">
-            </a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item">
-        <a class="nav-link active fw-bold text-dark border-bottom border-dark border-2 pb-1" href="index.html">Inicio</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fw-bold" href="catalogo.html">Catálogo</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fw-bold" href="#">Sobre nosotros</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fw-bold" href="#">Contacto</a>
-    </li>
-</ul></ul>
-                
-                <div class="d-flex align-items-center mt-2 mt-lg-0">
-                    <form class="position-relative me-3" role="search">
-                        <input class="form-control rounded-pill pe-5 bg-white border-0" type="search" placeholder="Buscar..." aria-label="Buscar" style="width: 200px;">
-                        <button class="btn btn-link position-absolute end-0 top-50 translate-middle-y text-secondary p-0 pe-3" type="submit">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </form>
-                    
-                    <a href="login.html" class="nav-link">
-                        <i class="bi bi-person"></i>
-                    </a>
-                </div>
+          <a
+            class="navbar-brand"
+            href="index.html"
+            style="position: relative; z-index: 1050"
+          >
+            <img
+              src="/img/logo.jpeg"
+              alt="Logo Oliv Taller de Joyas"
+              style="height: 60px; width: auto"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            </div> </div> </nav>
-</header>
-<main class="container my-5">
-  <div class="row">
-    <!-- Imagen del producto -->
-    <div class="col-md-6">
-      <img src="/img/collar Reflejos del Bosque.jpeg" class="img-fluid rounded w-51" alt="Collar Reflejos del Bosque">
-    </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-bold text-dark border-bottom border-dark border-2 pb-1"
+                  href="catalogo.html"
+                  >Catálogo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
 
-    <!-- Detalles del producto -->
-    <div class="col-md-6">
-      <h2 class="fw-bold">Collar Reflejos del Bosque</h2>
-      <p class="text-muted fs-5">$20.000</p>
-      <p>
-        El collar Reflejos del Bosque combina cristales facetados en tono humo y marfil con exclusivas piezas de nácar en verdes vibrantes y cobres.El diseño culmina en un dije central circular de nácar veteado, que aporta una luz única y orgánica. Es una joya con carácter, elegancia y la calidez de lo hecho a mano en nuestro taller familiar Oliverio & Co. Recordá que cada pieza es irrepetible.
-      </p>
-      <ul>
-        <li>Largo: 40cm</li>
-      </ul>
-      <!-- Botones de acción -->
-      <button class="btn btn-success me-2">Consultar por WhatsApp</button>
-      <button class="btn btn-outline-danger"><i class="bi bi-heart"></i> Favorito</button>
-    </div>
-  </div>
-   <!-- Miniaturas -->
-  <div class="d-flex gap-2">
-    <img src="img/collar refeljos del bosque foto 3.jpeg" class="img-thumbnail" alt="Detalle collar reflejos 1" style="width: 80px; height: auto;">
-    <img src="img/collar Reflejos del Bosque 1.jpeg" class="img-thumbnail" alt="Detalle collar reflejos 2" style="width: 80px; height: auto;">
-    <img src="img/collar Reflejos del Bosque.jpeg" class="img-thumbnail" alt="Detalle collar reflejos 3" style="width: 80px; height: auto;">
-  </div>
-</main>
-<section class="container my-5">
-  <h3 class="mb-4">Productos que podrían gustarte</h3>
-  <div class="row">
-    <!-- Card 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="img/collar Verde Botanico.jpeg" class="card-img-top" alt="Choker verde botánico">
-        <div class="card-body">
-          <h5 class="card-title">Choker verde botánico</h5>
-          <p class="text-muted">$16.000</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="img/set de pulseras protección.png" class="card-img-top" alt="Set de pulseras protección">
-        <div class="card-body">
-          <h5 class="card-title">Set de pulseras protección</h5>
-          <p class="text-muted">$9.000</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="img/choker ojo turco protección.jpg" class="card-img-top" alt="choker ojo turco">
-        <div class="card-body">
-          <h5 class="card-title">Choker ojo turco</h5>
-          <p class="text-muted">$15.000</p>
-        </div>
-      </div>
-    </div>
-    <!-- Card 4 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-100">
-        <img src="img/collar Etnico.jpg" class="card-img-top" alt="Collar étnico">
-        <div class="card-body">
-          <h5 class="card-title">Collar étnico</h5>
-          <p class="text-muted">$12.000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<footer class="bg-primary py-5 mt-5 border-top" style="border-top: 1px solid #e5e5e5;">
-    <div class="container">
-        <div class="row text-center text-md-start justify-content-between align-items-center">
-            
-            <div class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center gap-3 mb-4 mb-md-0">
-                <img src="/img/logo.jpeg" alt="Oliv Taller de Joyas" class="img-fluid" style="max-height: 75px;">
-                <span class="text-muted small font-weight-bold pt-2 pt-md-0">Joyería artesanal con propósito</span>
+            <div class="d-flex align-items-center mt-2 mt-lg-0">
+              <form class="position-relative me-3" role="search">
+                <input
+                  class="form-control rounded-pill pe-5 bg-white border-0"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Buscar"
+                  style="width: 200px"
+                />
+                <button
+                  class="btn btn-link position-absolute end-0 top-50 translate-middle-y text-secondary p-0 pe-3"
+                  type="submit"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+
+              <a href="#" class="text-dark fs-4 lh-1">
+                <i class="bi bi-person"></i>
+              </a>
             </div>
-            
-            <div class="col-12 col-md-4 text-md-end p-0">
-                <div class="d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-4">
-                    <a href="#" class="text-dark text-decoration-none font-weight-bold small">
-                        Política de Privacidad
-                    </a>
-                    <a href="#" class="text-dark text-decoration-none font-weight-bold small">
-                       Términos de Servicio
-                    </a>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </div>
-</footer>
+      </nav>
+    </header>
+    <main class="container my-5">
+      <div class="row">
+        <!-- Imagen del producto -->
+        <div class="col-md-6">
+          <img
+            id="imagenPrincipal"
+            src="/img/collar Reflejos del Bosque.jpeg"
+            class="rounded w-100"
+            alt="Collar Reflejos del Bosque"
+            style="height: 450px; object-fit: cover"
+          />
+        </div>
 
-  
-<body>
-  <html>
+        <!-- Detalles del producto -->
+        <div class="col-md-6">
+          <h2 class="fw-bold">Collar Reflejos del Bosque</h2>
+          <p class="text-muted fs-5">$20.000</p>
+          <p>
+            El collar Reflejos del Bosque combina cristales facetados en tono
+            humo y marfil con exclusivas piezas de nácar en verdes vibrantes y
+            cobres.El diseño culmina en un dije central circular de nácar
+            veteado, que aporta una luz única y orgánica. Es una joya con
+            carácter, elegancia y la calidez de lo hecho a mano en nuestro
+            taller familiar Oliverio & Co. Recordá que cada pieza es
+            irrepetible.
+          </p>
+          <hr />
+          <ul>
+            <li>Largo: 40cm</li>
+          </ul>
+          <hr />
+          <!-- Botones de acción -->
+          <button class="btn btn-success me-2">Consultar por WhatsApp</button>
+          <button id="btnFavorito" class="btn btn-outline-danger">
+            <i class="bi bi-heart"></i> Favorito
+          </button>
+        </div>
+      </div>
+      <!-- Miniaturas -->
+      <div class="d-flex gap-2">
+        <img
+          src="img/collar refeljos del bosque foto 3.jpeg"
+          class="img-thumbnail miniatura"
+          alt="Detalle collar reflejos 1"
+          style="width: 80px; height: auto; cursor: pointer; object-fit: cover"
+        />
+        <img
+          src="img/collar Reflejos del Bosque 1.jpeg"
+          class="img-thumbnail miniatura"
+          alt="Detalle collar reflejos 2"
+          style="width: 80px; height: auto; cursor: pointer; object-fit: cover"
+        />
+        <img
+          src="img/collar Reflejos del Bosque.jpeg"
+          class="img-thumbnail miniatura"
+          alt="Detalle collar reflejos 3"
+          style="width: 80px; height: auto; cursor: pointer; object-fit: cover"
+        />
+      </div>
+    </main>
+    <section class="container my-5">
+      <h3 class="mb-4">Productos que podrían gustarte</h3>
+      <hr />
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img
+              src="img/collar Verde Botanico.jpeg"
+              class="card-img-top"
+              alt="Choker verde botánico"
+            />
+            <div class="card-body">
+              <h5 role="button" class="card-title">Choker verde botánico</h5>
+              <p class="text-muted">$16.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img
+              src="img/set de pulseras protección.png"
+              class="card-img-top cover"
+              alt="Set de pulseras protección"
+            />
+            <div class="card-body">
+              <h5 role="button" class="card-title">
+                Set de pulseras protección
+              </h5>
+              <p class="text-muted">$9.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img
+              src="img/choker ojo turco protección.jpg"
+              class="card-img-top"
+              alt="choker ojo turco"
+            />
+            <div class="card-body">
+              <h5 role="button" class="card-title">Choker ojo turco</h5>
+              <p class="text-muted">$15.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img
+              src="img/collar Etnico.jpg"
+              class="card-img-top"
+              alt="Collar étnico"
+            />
+            <div class="card-body">
+              <h5 role="button" class="card-title">Collar étnico</h5>
+              <p class="text-muted">$12.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-primary py-5 mt-5 border-top"
+      style="border-top: 1px solid #e5e5e5"
+    >
+      <div class="container">
+        <div
+          class="row text-center text-md-start justify-content-between align-items-center"
+        >
+          <div
+            class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center gap-3 mb-4 mb-md-0"
+          >
+            <img
+              src="/img/logo.jpeg"
+              alt="Oliv Taller de Joyas"
+              class="img-fluid"
+              style="max-height: 75px"
+            />
+            <span class="text-muted small font-weight-bold pt-2 pt-md-0"
+              >Joyería artesanal con propósito</span
+            >
+          </div>
+
+          <div class="col-12 col-md-4 text-md-end p-0">
+            <div
+              class="d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-4"
+            >
+              <a
+                href="#"
+                class="text-dark text-decoration-none font-weight-bold small"
+              >
+                Política de Privacidad
+              </a>
+              <a
+                href="#"
+                class="text-dark text-decoration-none font-weight-bold small"
+              >
+                Términos de Servicio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
