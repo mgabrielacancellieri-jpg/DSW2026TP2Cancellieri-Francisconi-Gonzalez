@@ -11981,10 +11981,39 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.card-img-top {
-  height: 300px !important;
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
+.card-img-top.inicio {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.card-img-top.relacionado {
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-img-top.relacionado .btn-salmon {
+  background-color: #fcdbb2;
+  color: #000;
+  border: 1px solid #000;
+  font-weight: bold;
+}
+.card-img-top.relacionado .btn-salmon:hover {
+  background-color: rgb(250.0875, 196.05, 128.9125);
+  color: #fff;
+}
+.card-img-top.relacionado .btn-outline-dark {
+  border: 1px solid #000;
+  color: #000;
+  font-weight: bold;
+}
+.card-img-top.relacionado .btn-outline-dark:hover {
+  background-color: #000;
+  color: #fff;
+}
+.card-img-top.relacionado {
+  width: 100%;
 }
 
 .btn-salmon {
