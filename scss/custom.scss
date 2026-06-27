@@ -1,0 +1,50 @@
+// 1. Declaramos las variables con los colores de Oliv
+$primary: #fcdbb2;       // color salmón principal
+$body-bg: #ffffff;       // Fondo blanco para la web
+$text-muted: #6c757d;    // Gris para textos secundarios
+
+// 2. Traemos toda la estructura de Bootstrap para que adopte estos colores
+@import "../bootstrap/scss/bootstrap";
+// Cards grandes de inicio
+.card-img-top.inicio {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+// Cards de productos relacionados
+.card-img-top.relacionado {
+  height: 220px;
+  object-fit: cover;
+.btn-salmon {
+  background-color: $primary;
+  color: #000;
+  border: 1px solid #000;
+  font-weight: bold;
+  &:hover {
+    background-color: darken($primary, 10%);
+    color: #fff;
+  }
+}
+
+.btn-outline-dark {
+  border: 1px solid #000;
+  color: #000;
+  font-weight: bold;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}  width: 100%;
+}
+// regla para boton salmon:
+.btn-salmon {
+    background-color: $primary !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 0.375rem 0.75rem;
+
+}

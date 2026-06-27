@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto - Oliv Taller de Joyas</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lexend:wght@600;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <header class="sticky-top bg-primary shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="position: relative; z-index: 1050;">
+                    <img src="img/logo.jpeg" alt="Logo Oliv Taller de Joyas" style="height: 60px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center mt-2 mt-lg-0">
+                        <form class="position-relative me-3" role="search">
+                            <input class="form-control rounded-pill pe-5 bg-white border-0" type="search" placeholder="Buscar..." aria-label="Buscar" style="width: 200px;">
+                            <button class="btn btn-link position-absolute end-0 top-50 translate-middle-y text-secondary p-0 pe-3" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                        <a href="login.html" class="nav-link">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-md-6 text-center bg-light rounded p-3 shadow-sm">
+                <img src="img/collar Reflejos del Bosque.jpeg" class="img-fluid rounded w-100" alt="Collar Reflejos del Bosque" id="foto-principal" style="height: 480px; object-fit: contain;">
+                
+                <div class="d-flex gap-3 justify-content-center mt-4">
+                    <img src="img/collar refeljos del bosque foto 3.jpeg" class="img-thumbnail foto-miniatura" alt="Detalle collar reflejos 1" style="width: 80px; height: 80px; cursor: pointer; object-fit: cover; opacity: 1;">
+                    <img src="img/collar Reflejos del Bosque 1.jpeg" class="img-thumbnail foto-miniatura" alt="Detalle collar reflejos 2" style="width: 80px; height: 80px; cursor: pointer; object-fit: cover; opacity: 0.6;">
+                    <img src="img/collar Reflejos del Bosque.jpeg" class="img-thumbnail foto-miniatura" alt="Detalle collar reflejos 3" style="width: 80px; height: 80px; cursor: pointer; object-fit: cover; opacity: 0.6;">
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-md-5">
+                <h1 class="fw-bold display-5 text-dark mb-2">Collar Reflejos del Bosque</h1>
+                <p class="text-secondary fw-bold fs-3 mb-4">$18.000</p>
+                
+                <p class="fs-5 text-muted leading-relaxed">
+                    El collar Reflejos del Bosque combina cristales facetados en tono humo y marfil con exclusivas piezas de nácar en verdes vibrantes y cobres. El diseño culmina en un dije central circular de nácar veteado, que aporta una luz única y orgánica. 
+                </p>
+                <p class="text-muted">
+                    Es una joya con carácter, elegancia y la calidez de lo hecho a mano en nuestro taller familiar Oliverio & Co. Recordá que cada pieza es irrepetible.
+                </p>
+                
+                <hr class="my-4" />
+                <ul class="list-unstyled">
+                    <li class= "mt-2"></i><strong>Largo:</strong> 40cm</li>
+                    <li class="mt-2"></i><strong>Materiales:</strong> Cristal de Roca y dijes de nácar</li>
+                </ul>
+                <hr class="my-4" />
+                
+                <div class="d-flex gap-3 mt-4">
+                    <a href="https://wa.me/543425555555?text=Hola%20Oliv!%20Me%20interesa%20el%20Collar%20Reflejos%20del%20Bosque%20($18.000)." target="_blank" class="btn btn-success btn-lg px-4 shadow-sm" id="btn-whatsapp">
+                        <i class="bi bi-whatsapp me-2"></i>Consultar por WhatsApp
+                    </a>
+                    <button class="btn btn-outline-danger btn-lg px-4" id="btn-favorito">
+                        <i class="bi bi-heart"></i> <span class="ms-1">Favorito</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary py-5 mt-5 border-top" style="border-top: 1px solid #e5e5e5;">
+        <div class="container">
+            <div class="row text-center text-md-start justify-content-between align-items-center">
+                <div class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center gap-3 mb-4 mb-md-0">
+                    <img src="img/logo.jpeg" alt="Oliv Taller de Joyas" class="img-fluid" style="max-height: 75px;">
+                    <span class="text-muted small font-weight-bold pt-2 pt-md-0">Joyería artesanal con propósito</span>
+                </div>
+                <div class="col-12 col-md-4 text-md-end p-0">
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-4">
+                        <a href="#" class="text-dark text-decoration-none font-weight-bold small">Política de Privacidad</a>
+                        <a href="#" class="text-dark text-decoration-none font-weight-bold small">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="funciones.js"></script>
+</body>
+</html>
