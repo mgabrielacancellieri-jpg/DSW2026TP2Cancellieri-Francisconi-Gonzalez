@@ -93,14 +93,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // B. Funcionalidad del Botón Favoritos
-        if (btnFavorito) {
+            if (btnFavorito) {
+            const toastFavoritoEl = document.getElementById('toast-favorito');
+            const toastFavorito = toastFavoritoEl ? new bootstrap.Toast(toastFavoritoEl) : null;
+
             btnFavorito.addEventListener('click', function() {
                 const icono = this.querySelector('i');
                 icono.classList.toggle('bi-heart');
                 icono.classList.toggle('bi-heart-fill');
                 this.classList.toggle('btn-danger');
                 this.classList.toggle('btn-outline-danger');
+
+                // Mostrar el toast solo si se acaba de marcar como favorito
+                if (icono.classList.contains('bi-heart-fill') && toastFavorito) {
+                    toastFavorito.show();
+                }
             });
         }
+        
+
     }
 });
