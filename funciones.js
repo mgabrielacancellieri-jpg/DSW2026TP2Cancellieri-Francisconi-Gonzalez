@@ -1,21 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // =========================================================
-    // 1. SCRIPTS PARA EL ÍNDICE (index.html)
-    // =========================================================
+        // 1. SCRIPTS PARA EL ÍNDICE (index.html)
+    
     const esInicio = document.querySelector('img[alt*="Nueva Colección Oliv"]');
     if (esInicio) {
-        console.log("📍 Lógica de Inicio activa");
+        console.log("Lógica de Inicio activa");
     }
 
-    // =========================================================
+    
     // 2. SCRIPTS PARA EL CATÁLOGO (catalogo.html)
-    // =========================================================
-    const grillaProductos = document.getElementById('grilla-productos');
+        const grillaProductos = document.getElementById('grilla-productos');
     if (grillaProductos) {
-        console.log("📍 Lógica de Catálogo activa (Filtros y Modal)");
+        console.log("Lógica de Catálogo activa (Filtros y Modal)");
 
-        // A. Filtros inteligentes por URL (?categoria=...)
+        // Filtros inteligentes por URL (?categoria=...)
         const urlParams = new URLSearchParams(window.location.search);
         const categoriaFiltro = urlParams.get('categoria');
         const productos = document.querySelectorAll(".tarjeta-producto");
@@ -37,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             productos.forEach(producto => producto.style.display = "block");
         }
 
-        // B. Ventana flotante (Modal) para ampliar fotos
+        // Ventana flotante (Modal) para ampliar fotos
         const modalElemento = document.getElementById('modalProducto');
         if (modalElemento) {
             const modal = new bootstrap.Modal(modalElemento);
@@ -70,29 +68,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // =========================================================
+
     // 3. SCRIPTS PARA EL DETALLE DE PRODUCTO (producto-detalle.html)
-    // =========================================================
+    
     // Buscamos si existe la foto principal del detalle para activar la página
     const fotoPrincipal = document.getElementById('foto-principal');
     const btnFavorito = document.getElementById('btn-favorito');
 
     if (fotoPrincipal || btnFavorito) {
-        console.log("📍 Lógica de Detalle de Producto activa (Miniaturas y Favoritos)");
+        console.log("Lógica de Detalle de Producto activa (Miniaturas y Favoritos)");
         
-        // A. Cambiar foto principal al tocar una miniatura
+        //Cambiar foto principal al tocar una miniatura
         document.querySelectorAll('.foto-miniatura').forEach(miniatura => {
             miniatura.addEventListener('click', function() {
                 // Pasamos la ruta de la miniatura a la foto grande
                 fotoPrincipal.src = this.src;
                 
-                // Efecto visual opcional: opacidad en la miniatura activa
+                // Efecto visual opacidad en la miniatura activa
                 document.querySelectorAll('.foto-miniatura').forEach(m => m.style.opacity = '0.6');
                 this.style.opacity = '1';
             });
         });
 
-        // B. Funcionalidad del Botón Favoritos
+        // Funcionalidad del Botón Favoritos
             if (btnFavorito) {
             const toastFavoritoEl = document.getElementById('toast-favorito');
             const toastFavorito = toastFavoritoEl ? new bootstrap.Toast(toastFavoritoEl) : null;
